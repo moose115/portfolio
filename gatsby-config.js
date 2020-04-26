@@ -4,6 +4,7 @@ module.exports = {
     description: 'Mustafa Üçüncü JS developer based in Poland',
     url: 'https://portfolio-beryl-eight.now.sh/', // no trailing slash!
     author: 'Mustafa Üçüncü',
+    image: '/image/code.png'
   },
   plugins: [
     `gatsby-plugin-react-helmet`,

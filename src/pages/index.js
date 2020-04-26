@@ -64,7 +64,7 @@ grid-area: aside;
 const IndexPage = () => (
   <>
     <GlobalStylesheet />
-    <SEO />
+    <SEO title="Mustafa Üçüncü" />
     <Header />
     <Container>
       <Content>
