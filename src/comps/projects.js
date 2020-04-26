@@ -41,7 +41,7 @@ const Projects = () => {
     <Subheading>REGON package</Subheading>
     <Summary>Node interface for REGON database.</Summary>
     <ScreenMockup><div></div></ScreenMockup>
-    <p>Interface connecting to Polish company register. It's written in Typescript and uses SOAP envelopes.</p>
+    <p>Interface connecting to Polish company registry. It's written in Typescript and uses SOAP envelopes.</p>
     <Divider />
 
     <Subheading>Shop</Subheading>
