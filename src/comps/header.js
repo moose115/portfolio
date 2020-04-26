@@ -100,7 +100,7 @@ border-radius: 50% 50%;
 }
 `
 
-const ContactButton = styled.button`
+const ContactLink = styled.a`
 margin-top: 2em;
 padding: 8px 16px;
 display: flex;
@@ -112,6 +112,7 @@ font-family: 'Montserrat', sans-serif;
 font-size: 1em;
 font-weight: bold;
 color: var(--cream);
+text-decoration: none;
 text-transform: uppercase;
 cursor: pointer;
 transition: .2s;
@@ -137,21 +138,21 @@ const Header = () => (
           <InfoOccupation>JS Developer</InfoOccupation>
           <InfoLinks>
             <InfoLinksItem>
-              <InfoLink href="#" ><Github width="1.5em" /></InfoLink>
+              <InfoLink href="https://github.com/mustaf115" title="Github" ><Github width="1.5em" /></InfoLink>
             </InfoLinksItem>
             <InfoLinksItem>
-              <InfoLink href="#" ><Linkedin width="1.5em" /></InfoLink>
+              <InfoLink href="https://www.linkedin.com/in/mustafa-ucuncu-70617013a/" title="LinkedIn" ><Linkedin width="1.5em" /></InfoLink>
             </InfoLinksItem>
             <InfoLinksItem>
-              <InfoLink href="#" ><Mail width="1.5em" /></InfoLink>
+              <InfoLink href="mailto:mustafaucuncu99@gmail.com" title="Email" ><Mail width="1.5em" /></InfoLink>
             </InfoLinksItem>
           </InfoLinks>
         </div>
       </Info>
-      <ContactButton>
+      <ContactLink href="#contact" title="Contact" >
         <PaperPlane width="1.5em" />
         Contact me
-      </ContactButton>
+      </ContactLink>
     </Content>
   </Wrapper>
 )
