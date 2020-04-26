@@ -1,6 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 import { createGlobalStyle } from 'styled-components'
+import SEO from '../comps/seo'
 import Header from '../comps/header'
 import Footer from '../comps/footer'
 import Projects from '../comps/projects'
@@ -63,6 +64,7 @@ grid-area: aside;
 const IndexPage = () => (
   <>
     <GlobalStylesheet />
+    <SEO />
     <Header />
     <Container>
       <Content>
