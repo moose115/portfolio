@@ -1,15 +1,16 @@
-import React from 'react'
-import styled from 'styled-components'
-import { Container } from './utils'
-import { Github } from '@styled-icons/entypo-social/Github'
-import { Linkedin } from '@styled-icons/boxicons-logos/Linkedin'
-import { Mail } from '@styled-icons/heroicons-solid/Mail'
-import { PaperPlane } from 'styled-icons/entypo'
+import React from 'react';
+import styled from 'styled-components';
+import { Container } from './utils';
+import { Github } from '@styled-icons/entypo-social/Github';
+import { Linkedin } from '@styled-icons/boxicons-logos/Linkedin';
+import { Mail } from '@styled-icons/heroicons-solid/Mail';
+import { PaperPlane } from 'styled-icons/entypo';
+import me from '../images/me.jpg';
 
 const Wrapper = styled.header`
 background: var(--cream);
 border-top: 10px solid #778492;
-`
+`;
 
 const Content = styled(Container)`
 display: flex;
@@ -20,7 +21,7 @@ flex-direction: column;
 @media(min-width: 720px) {
   flex-direction: row;
 }
-`
+`;
 
 const Info = styled.div`
 display: flex;
@@ -30,7 +31,7 @@ align-items: center;
 @media(min-width: 720px) {
   flex-direction: row;
 }
-`
+`;
 
 const InfoName = styled.h1`
 font-family: 'Montserrat', sans-serif;
@@ -41,7 +42,7 @@ text-align: center;
 @media(min-width: 720px) {
   text-align: left;
 }
-`
+`;
 
 const InfoOccupation = styled.h2`
 margin: 0 0 15px;
@@ -52,7 +53,7 @@ text-align: center;
 @media(min-width: 720px) {
   text-align: left;
 }
-`
+`;
 
 const InfoLinks = styled.ul`
 padding: 0;
@@ -63,11 +64,11 @@ list-style: none;
 @media(min-width: 720px) {
   justify-content: flex-start;
 }
-`
+`;
 
 const InfoLinksItem = styled.li`
 margin-right: 10px;
-`
+`;
 
 const InfoLink = styled.a`
 width: 36px;
@@ -87,18 +88,23 @@ transition: .2s;
     background: var(--dark-silver);
   }
 }
-`
+`;
 
 const ImgMockup = styled.div`
 width: 200px;
 height: 200px;
-border: 3px solid black;
+border: 3px solid var(--light-gray);
 border-radius: 50% 50%;
+overflow: hidden;
+
+img {
+  width: 100%;
+}
 
 @media(min-width: 720px) {
   margin-right: 30px;
 }
-`
+`;
 
 const ContactLink = styled.a`
 margin-top: 2em;
@@ -126,13 +132,15 @@ svg {
     background: var(--dark-green);
   }
 }
-`
+`;
 
 const Header = () => (
   <Wrapper>
     <Content>
       <Info>
-        <ImgMockup />
+        <ImgMockup>
+          <img src={me} alt="me" />
+        </ImgMockup>
         <div>
           <InfoName>Mustafa Ucuncu</InfoName>
           <InfoOccupation>JS Developer</InfoOccupation>
@@ -155,6 +163,6 @@ const Header = () => (
       </ContactLink>
     </Content>
   </Wrapper>
-)
+);
 
-export default Header
+export default Header;
